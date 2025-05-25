@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block title %} Home Page {% endblock title %}
+
+{% block content %}
+<div class="container">
+    <h1 class="text-center " style="font-weight:bold">Detail Product</h1>
+    <div class="d-flex justify-content-center">
+        <div class="card mb-3 ">
+          <img src="/media/{{detail.photo}}" style="width:600px" >
+          <div class="card-body">
+            <h3 class="card-title">Book Name:{{detail.name}}</h3>
+            <p class="card-text">{{detail.description}}</p>
+               <div class="d-flex  " style="line-height:0 ;">
+                  <p><i class="bi bi-star-fill text-warning"></i></p>
+                  <p><i class="bi bi-star-fill text-warning"></i></p>
+                  <p><i class="bi bi-star-fill text-warning"></i></p>
+                  <p><i class="bi bi-star-fill text-warning"></i></p>
+                <p><i class="bi bi-star-half text-warning"></i></p>
+                  <p><i class="bi bi-star "></i></p>
+            </div>
+            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+               <a class="btn btn-sm text-center btn-danger" href="/kiyo/bookList">Back </a>
+          </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock content %}

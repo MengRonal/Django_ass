@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% block title %} Shop {% endblock %}
+{% block content %}
+
+<hr>
+
+<div class="container">
+    <form action="/kiyo/search-result" method="GET" class="d-flex w-25" role="search">
+      <input class="form-control    " type="search" name="kw" placeholder="Search" aria-label="Search"/>
+       <button class="btn btn-success" type="submit">Search</button>
+ </form>
+</div>
+<div class="container px-5">
+    <div class="row p-5">
+            {% for b in b_list %}
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 my-2" style="width: 18rem;">
+                <div class="card w-100 "  >
+                    <img src="/media/{{ b.photo }}" class="card-img-top">
+                    <hr>
+                    <div class="card-body">
+                        <h4 class="card-title" >{{ b.name }}</h4>
+                        <p class="card-text"> {{b.description}}</p>
+                         <div class="d-flex  " style="line-height:0 ;">
+                              <p><i class="bi bi-star-fill text-warning"></i></p>
+                              <p><i class="bi bi-star-fill text-warning"></i></p>
+                              <p><i class="bi bi-star-fill text-warning"></i></p>
+                              <p><i class="bi bi-star-fill text-warning"></i></p>
+                            <p><i class="bi bi-star-half text-warning"></i></p>
+                              <p><i class="bi bi-star "></i></p>
+                        </div>
+                        <h4 style="color: red;">{{ b.price }}$</h4>
+                         <a href="/kiyo/detail/{{ b.id }}" class="btn btn-sm btn-primary">Detail</a>
+                        <a href="/kiyo/buy/{{ b.id }}" class="btn  btn-sm btn-danger ">Buy</a>
+                    </div>
+
+                </div>
+            </div>
+
+        {% endfor %}
+    </div>
+
+</div>
+{% endblock content %}

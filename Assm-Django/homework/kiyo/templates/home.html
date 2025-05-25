@@ -1,0 +1,379 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %} Page Home {% endblock title %}
+{% block content %}
+
+    <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" navigation="true" space-between="30"
+        centered-slides="true" autoplay-delay="2500" autoplay-disable-on-interaction="false" style="height: 70vh;">
+                <div class="swiper-slide"><img src="{% static 'slide3.jpg' %}" ></div>
+
+                <div class="swiper-slide"><img src="{% static 'l.png' %}"  style="width:86%;"></div>
+                <div class="swiper-slide"><img src="{% static 'book2.jpg' %}" alt="img3"></div>
+                <div class="swiper-slide"><img src="{% static 'slide.jpg' %}" alt="img4"></div>
+                <div class="swiper-slide"><img src="{% static 'book.jpg' %}" alt="img5"></div>
+      </swiper-container>
+
+    <h4 style=" font-weight:700 ;line-height: 0; " class="mt-5 mb-3 text-dark">Our Top Categories</h4>
+
+    <div class="bg-light">
+        <div class="container " style="height: 38vh;">
+            <div class="row py-3">
+                <div class="w-100">
+                    <swiper-container style="height: 35vh;" class="mySwiper" pagination="true" pagination-clickable="true" slides-per-view="5"
+                        centered-slides="true" space-between="20" grab-cursor="true" >
+                        <div class="swiper-slide p-2"><img src="{% static 'book.jpg' %}" alt=""></div>
+                         <div class="swiper-slide"><img src="{% static 'o10.jpg' %}"></div>
+                            <div class="swiper-slide"><img src="{% static 'o11.jpg' %}" alt=""></div>
+                            <div class="swiper-slide"><img src="{% static 'o1.jpg' %}" alt=""></div>
+                            <div class="swiper-slide"><img src="{% static 'h2.jpg' %}" ></div>
+                            <div class="swiper-slide"><img src="{% static 'o6.jpg' %}" alt=""></div>
+                            <div class="swiper-slide"><img src="{% static 'f2.jpg' %}" alt=""></div>
+                            <div class="swiper-slide"><img src="{% static 'o3.jpg' %}" alt=""></div>
+                            <div class="swiper-slide"><img src="{% static 'o4.jpg' %}" alt=""></div>
+
+                    </swiper-container>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container p-5">
+
+        <div class="row p-5 ">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                <h3 class="text-dark text-center "  style="font-weight:700" >
+                    Business / Economics
+                </h3>
+                <p class="text-dark text-center ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et tempore ex
+                    molestias aliquid vitae quia.</p>
+                <p class="text-dark text-center " style="line-height: 0;">Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. </p>
+                <hr />
+            </div>
+            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
+                <div class="card  shadow  w-100">
+                    <img src="{% static 'book2.jpg' %}" class="card-img-top" >
+                    <div class="card-body">
+                        <h5 class="card-title">Tittle Or Name Book</h5>
+                        <p class="card-text">
+
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque hic molestias rerum amet
+                            nulla cumque dolores soluta neque tempora maxime.
+                        </p>
+                        <a href="#" class="btn btn-primary">Detail</a>
+                        <a href="#" class="btn btn-danger ml-3">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12 ">
+                <div class="card w-100 shadow ">
+                    <img src="{% static 'b1.jpg' %}" class="card-img-top" >
+                    <div class="card-body">
+                        <h5 class="card-title">Palm Angels</h5>
+                        <p class="card-text">
+                           Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque hic molestias rerum amet
+                            nulla cumque dolores soluta neque tempora maxime.
+                        </p>
+                        <a href="#" class="btn btn-primary">Detail</a>
+                        <a href="#" class="btn btn-danger ml-3">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
+                <div class="card w-100 shadow ">
+                    <img src="{% static 'b2.jpg' %}" class="card-img-top" >
+                    <div class="card-body">
+                        <h5 class="card-title">Off-White</h5>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque hic molestias rerum amet
+                            nulla cumque dolores soluta neque tempora maxime.
+                        </p>
+                        <a href="#" class="btn btn-primary">Detail</a>
+                        <a href="#" class="btn btn-danger ml-3">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12 ">
+                <div class="card w-100 shadow ">
+                    <img src="{% static 'o7.jpg' %}" class="card-img-top" >
+                    <div class="card-body">
+                        <h5 class="card-title">Supreme</h5>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque hic molestias rerum amet
+                            nulla cumque dolores soluta neque tempora maxime.
+                        </p>
+                        <a href="#" class="btn btn-primary">Detail</a>
+                        <a href="#" class="btn btn-danger ml-3">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr />
+        <div class="row p-3" id="fashion">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                <h3 class="text-dark text-center " style="font-weight:700">
+                    Fantasy
+                </h3>
+                <p class="text-dark text-center ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et tempore ex
+                    molestias aliquid vitae quia.</p>
+                <p class="text-dark text-center " style="line-height: 0;">Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. </p>
+                <hr />
+            </div>
+            <div class="row">
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12 my-3">
+                    <div class="card w-100 shadow ">
+                        <img src="{% static 'o9.jpg' %}" class="card-img-top" >
+                        <div class="card-body">
+                            <h5 class="card-title">Tittle Or Name Book</h5>
+                            <p class="card-text">
+
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque hic molestias rerum amet nulla cumque dolores soluta neque tempora maxime.Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            </p>
+                            <a href="#" class="btn btn-primary">Detail</a>
+                            <a href="#" class="btn btn-danger ml-3">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12 my-3">
+                    <div class="card w-100 shadow ">
+                        <img src="{% static 'f.jpg' %}" class="card-img-top" >
+                        <div class="card-body">
+                            <h5 class="card-title">Palm Angels</h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque hic molestias rerum amet nulla cumque dolores soluta neque tempora maxime.
+                            </p>
+                            <a href="#" class="btn btn-primary">Detail</a>
+                            <a href="#" class="btn btn-danger ml-3">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12 my-3">
+                    <div class="card w-100 shadow ">
+                        <img src="{% static 'f1.jpg' %}" class="card-img-top" >
+                        <div class="card-body">
+                            <h5 class="card-title">Off-White</h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque hic molestias rerum
+                                amet
+                                nulla cumque dolores soluta neque tempora maxime.
+                            </p>
+                            <a href="#" class="btn btn-primary">Detail</a>
+                            <a href="#" class="btn btn-danger ml-3">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12 my-3">
+                    <div class="card w-100 shadow ">
+                        <img src="{% static 'f.jpg' %}" class="card-img-top" >
+                        <div class="card-body">
+                            <h5 class="card-title">Supreme</h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque hic molestias rerum
+                                amet
+                                nulla cumque dolores soluta neque tempora maxime.
+                            </p>
+                            <a href="#" class="btn btn-primary">Detail</a>
+                            <a href="#" class="btn btn-danger ml-3">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr />
+        <div class="row p-3" id="computer">
+             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                <h3 class="text-dark text-center " style="font-weight:700">
+                    History
+                </h3>
+                <p class="text-dark text-center ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et tempore ex
+                    molestias aliquid vitae quia.</p>
+                <p class="text-dark text-center " style="line-height: 0;">Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. </p>
+                <hr />
+            </div>
+
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 my-3">
+                <div class="card w-100 shadow " style="background-color: #e4e4e4 !important">
+                    <img src="{% static 'h1.jpg' %}" class="card-img-top" >
+                    <div class="card-body">
+                        <h5 class="card-title">Title or name book</h5>
+                        <p class="card-text">
+                            Description of book
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque hic molestias rerum amet
+                            nulla cumque dolores soluta neque tempora maxime.
+                        </p>
+                        <a href="#" class="btn btn-primary">Detail</a>
+                        <a href="#" class="btn btn-danger ml-3">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 my-3">
+                <div class="card w-100 shadow ">
+                    <img src="{% static 'h2.jpg' %}" class="card-img-top" >
+                    <div class="card-body">
+                        <h5 class="card-title">tittle</h5>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque hic molestias rerum amet
+                            nulla cumque dolores soluta neque tempora maxime.
+                        </p>
+                        <a href="#" class="btn btn-primary">Detail</a>
+                        <a href="#" class="btn btn-danger ml-3">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 my-3">
+                <div class="card w-100 shadow ">
+                    <img src="{% static 'h3.jpg' %}" class="card-img-top" >
+                    <div class="card-body">
+                        <h5 class="card-title">tittle</h5>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque hic molestias rerum amet
+                            nulla cumque dolores soluta neque tempora maxime.
+                        </p>
+                        <a href="#" class="btn btn-primary">Detail</a>
+                        <a href="#" class="btn btn-danger ml-3">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr />
+        <div class="row p-3" id="mobile-phone">
+            <h3 class="bg-success py-2 px-3 my-3 rounded text-center text-white w-100">
+                Children’s Fiction
+            </h3>
+            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 my-3">
+                <div class="card w-100 shadow ">
+                    <img src="{% static 'o1.jpg' %}" class="card-img-top" >
+                    <div class="card-body">
+                        <h5 class="card-title">Title or name book</h5>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque hic molestias rerum amet
+                            nulla cumque dolores soluta neque tempora maxime.
+                        </p>
+                        <a href="#" class="btn btn-primary">Detail</a>
+                        <a href="#" class="btn btn-danger ml-3">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 my-3">
+                <div class="card w-100 shadow ">
+                    <img src="{% static 'o2.jpg' %}" class="card-img-top" >
+                    <div class="card-body">
+                        <h5 class="card-title">title</h5>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque hic molestias rerum amet
+                            nulla cumque dolores soluta neque tempora maxime.
+                        </p>
+                        <a href="#" class="btn btn-primary">Detail</a>
+                        <a href="#" class="btn btn-danger ml-3">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr />
+<!--        View More-->
+       <div class="d-flex justify-content-center">
+           <a class="btn btn-sm text-center" href="/kiyo/bookList">View More <i class="bi bi-arrow-right-circle"></i></a>
+       </div>
+
+        <div class="row p-3" id="about">
+
+            <div class="card p-2 shadow my-3">
+                <div class="card-body">
+                    <h5 class="card-title">About Us</h5>
+                    <p class="card-text">
+                        Being a freelance requires more creativity. The majority of
+                        customers are interested in your personality as much as in your
+                        works. Andrew Reifman decided that listing his projects, skills,
+                        and experiences is rather boring. Instead, he chose a couple of
+                        fun facts and cartoon graphics for the “About” page. You find out
+                        who Andrew actually is, not just what his works look like.
+                    </p>
+                </div>
+                <img src="img/12.jpeg" class="card-img-bottom" />
+            </div>
+        </div>
+        <hr />
+    </div>
+  <div class="container-fluid ">
+
+         <a href="index.html" class="navbar-brand" style="font-size: 26px ; font-weight:bold; text-transform: uppercase;"><span
+                style="color: hsl(0, 0%, 62%);">Online</span> <span style="color: black;">BookStore</span></a>
+        <div class="d-flex justify-content-center gap-3" id="contact">
+                <form class="w-25">
+                    <div class="form-group mb-4">
+                        <input type="text" class="form-control" placeholder="Username" />
+                    </div>
+                    <div class="form-group mb-4">
+                        <input type="email" class="form-control" placeholder="Email address" />
+                    </div>
+                    <div class="form-group mb-4">
+                        <input type="text" class="form-control" placeholder="Phone Number" />
+                    </div>
+                    <div class="form-group mb-4">
+                        <textarea class="form-control" placeholder="Message here..." rows="5"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" class="form-control btn-primary" value="Submit" />
+                    </div>
+                </form>
+                <div class="footer">
+
+                    <div class="Quick_Link">
+                        <h3  style="font-weight: bold;">Quick Link</h3>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Content</a></li>
+                            <li><a href="#">Bog</a></li>
+                            <li><a href="#">Agent & Customer</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="Unity_Pages">
+                        <h3 style="font-weight: bold;">Unity Pages</h3>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Terms Of Service</a></li>
+                            <li><a href="#">Product</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="Contact">
+                        <H3 style="font-weight: bold;">Contact</h3>
+                         <ul>
+                            <li><a href="#">0123456789</a></li>
+                            <li><a href="#">ONLINE BOOKSTORE</a></li>
+                            <li><a href="#">WWW.ONLINE BOOKSTORE.COM</a></li>
+                            <li><a href="#">Banteay Meanchey3°35'56.9"N 102°58'45.7"E</a></li>
+                        </ul>
+                    </div>
+                </div>
+        </div>
+        <div class="row ">
+            <div
+                class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12  d-flex justify-content-center align-items-center text-white">
+                <i class="fab fa-facebook"
+                    style="font-size: 20px; margin-right: 10px ;cursor: pointer ;color: blue;"></i>
+                <i class="bi bi-tiktok" style="font-size: 20px; margin-right: 10px ;cursor: pointer  ;color: black;">
+                </i>
+
+                <i class="fab fa-linkedin"
+                    style="font-size: 20px; margin-right: 10px ;cursor: pointer  ;color: #0077b6;"></i>
+                <i class="fab fa-instagram"
+                    style="font-size: 20px; margin-right: 10px ;cursor: pointer  ;color: red;"></i>
+                <i class="bi bi-telegram" style="font-size: 20px; margin-right: 10px ;cursor: pointer  ;color:#0077b6;">
+                </i>
+            </div>
+            <p class="small w-100 text-center">
+                © 2025 Copyright: BookStore
+            </p>
+        </div>
+
+    </div>
+
+{% endblock content %}

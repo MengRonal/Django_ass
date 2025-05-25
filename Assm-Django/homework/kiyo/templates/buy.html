@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+{% block title %} booklist {% endblock %}
+{% load static %}
+{% block content %}
+<div class="container">
+<div class="toast-container position-fixed bottom-0 top-0 end-0 p-3">
+  <div id="liveToast" data-bs-config='{"delay":2000, "title":123}' class="toast" role="alert" aria-live="assertive" aria-atomic="true"  >
+       <div class="toast-body bg-warning">
+           <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            <strong>You Sure!!</strong> You Want to Buy This Book
+        </div>
+  </div>
+</div>
+<!--    alert-->
+
+    <div class="d-flex justify-content-center mt-5" >
+        <div class="card mb-3" style="width: 700px; height:350px">
+          <div class="row g-0">
+            <div class="col-md-4 py-4">
+              <img src="/media/{{buy.photo}}" style="width:250px" >
+            </div>
+            <div class="col-md-8 p-2">
+              <div class="card-body">
+                    <h3 class="card-title" style="font-weight:bold">Type Of Book:{{ buy.name }}</h3>
+                     <h5 style="line-height:1 ; font-weight:600" > Price:{{ buy.price }}$</h5>
+                    <p class="card-text"> {{buy.description}}</p>
+                    <div class="d-flex  " style="line-height:0 ;">
+                          <p><i class="bi bi-star-fill text-warning"></i></p>
+                          <p><i class="bi bi-star-fill text-warning"></i></p>
+                          <p><i class="bi bi-star-fill text-warning"></i></p>
+                          <p><i class="bi bi-star-fill text-warning"></i></p>
+                        <p><i class="bi bi-star-half text-warning"></i></p>
+                          <p><i class="bi bi-star "></i></p>
+                    </div>
+                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+              </div>
+
+                <!-- Button trigger modal -->
+                <button  id="liveToastBtn" type="button" class="btn btn-primary mx-4" data-bs-toggle="modal" data-bs-target="#exampleModal" >Buy Now </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel"  style="font-weight:bold">Payment</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <h5 style="line-height:1 ; font-weight:600" >Total Price:{{ buy.price }}$</h5>
+                         <img src="{% static 'qr.jpg' %}" class="card-img-top" style="height:500px ">
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}
